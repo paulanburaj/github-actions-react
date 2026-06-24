@@ -1,0 +1,23 @@
+{
+    "extends": "./tsconfig.app.json",
+    "compilerOptions": {
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+        "types": [
+            "jest",
+            "node"
+        ],
+        "typeRoots": [
+            "./node_modules/@types",
+            "./src"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "verbatimModuleSyntax": false
+    },
+    "include": [
+        "src/**/*",
+        "src/custom.d.ts"
+    ]
+}
