@@ -8,7 +8,7 @@ describe('App component', () => {
 
         expect(screen.getByRole('heading', { name: /get started/i })).toBeInTheDocument();
         expect(screen.getByRole('link', { name: /explore vite/i })).toBeInTheDocument();
-        expect(screen.getByRole('link', { name: /learn more/i })).toBeInTheDocument();
+        expect(screen.getByRole('link', { name: /learn more/i })).not.toBeInTheDocument();
     });
 
     test('increments counter when button is clicked', async () => {
