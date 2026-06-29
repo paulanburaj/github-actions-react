@@ -17,6 +17,7 @@ jobs:
               run: npm test
     deploy:
         runs-on: ubuntu-latest
+        needs: test-repo
         steps:
             - name: Get code
               uses: actions/checkout@v3
