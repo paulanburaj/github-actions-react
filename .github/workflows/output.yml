@@ -7,4 +7,4 @@ jobs:
             - name: Get code
               uses: actions/checkout@v3
             - name: output message
-              run: ${{ toJSON(github) }}
+              run: echo "${{ toJSON(github) }}"
